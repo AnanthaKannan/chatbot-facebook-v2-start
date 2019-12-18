@@ -219,24 +219,24 @@ function handleDialogFlowAction(sender, action, messages, contexts, parameters) 
 }
 
 function sendEmail(subject, content){
-    console.log('sending email...');
-    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-    const msg = {
-    to: 'sreeananthakannan@gmail.com',
-    from: 'sreeananthakannan@gmail.com',
-    subject: 'Sending with Twilio SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-    };
-    sgMail.send(msg)
-    .then(() =>{
-        console.log("email send successfully");
-    })
-    .catch((error) =>{
-        console.log(`emial faild to send`);
-        console.error(error.toString());
-    });
+    // console.log('sending email...');
+    // const sgMail = require('@sendgrid/mail');
+    // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    // const msg = {
+    // to: 'sreeananthakannan@gmail.com',
+    // from: 'sreeananthakannan@gmail.com',
+    // subject: 'Sending with Twilio SendGrid is Fun',
+    // text: 'and easy to do anywhere, even with Node.js',
+    // html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    // };
+    // sgMail.send(msg)
+    // .then(() =>{
+    //     console.log("email send successfully");
+    // })
+    // .catch((error) =>{
+    //     console.log(`emial faild to send`);
+    //     console.error(error.toString());
+    // });
 
 }
 
