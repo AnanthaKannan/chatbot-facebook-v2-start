@@ -2,7 +2,7 @@
   "name": "hero",
   "version": "1.0.0",
   "engines": {
-    "node": "8.x"
+    "node": "10.17.0"
   },
   "description": "",
   "main": "app.js",
